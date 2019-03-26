@@ -2,7 +2,7 @@ node('mavenbuilds'){
     def mvnHome = tool name: 'maven360', type: 'maven'
     stage('checkout'){
         echo "downloading the source code"
-        git credentialsId: 'githubaccount', url: 'https://github.com/ramharig/simple-java-maven-app.git'
+       git credentialsId: 'git_token', url: 'https://github.com/amritlamsal123/simple-java-maven-app.git'
         echo "successfully checkout"
     }
     stage('execute test case'){
